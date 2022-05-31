@@ -911,10 +911,11 @@ footer {
 }
 
 .form-footer {
+  display: flex;
   width: 570px;  
 }
 .mailing-div {
-  display: flex;  
+   
 }
 .mailing {
   margin-top: 0;
@@ -965,8 +966,7 @@ footer {
  
   letter-spacing: 0.06em;
   border: none;
-  color: var(--background-color);
-  position: absolute;
+  color: var(--background-color);  
   width: 200px;
   height: 50px;
   background: var(--accent-color);
