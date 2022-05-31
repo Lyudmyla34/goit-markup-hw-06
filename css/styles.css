@@ -8,7 +8,7 @@
   --icon-color: #afb1b8;
   --icon-background-color: rgba(255, 255, 255, 0.1);
   --background-modal: rgba(0, 0, 0, 0.2);
-  --header-line: #ECECEC;
+  --header-line: #ececec;
 }
 
 *,
@@ -38,7 +38,7 @@ body {
 
 .header-container {
   display: flex;
-  align-items: center;  
+  align-items: center;
 }
 .header-nav {
   display: flex;
@@ -300,6 +300,7 @@ body {
   text-transform: uppercase;
   color: var(--background-color);
 }
+ /* Модальне вікно*/
 .backdrop {
   position: fixed;
   top: 0;
@@ -345,6 +346,30 @@ body {
   background: var(--background-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50px;
+}
+
+.btn-modal-close:hover,
+.btn-modal-close:focus{
+  fill: var(--accent-color);
+}
+
+.contact-modal{
+  position: absolute; 
+  
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  
+    color: var(--primary-text-second-color);
+}
+
+.modal-form{
+  display: flex;
+  flex-direction: column;
 }
 .buttons {
   padding-top: 10px;
@@ -627,7 +652,7 @@ body {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
-  }
+}
 .social-link.social-icon {
   transition-property: fill;
   transition-duration: 250ms;
@@ -643,7 +668,6 @@ body {
 
 .social-icon {
   fill: var(--icon-color);
-  
 }
 
 /* клиенти */
@@ -836,8 +860,11 @@ footer {
 
   color: var(--background-color);
 }
-.footer-beatween:not(:last-child) {
+.footer-contakts {
   margin-right: 70px;
+}
+.footer-beatween {
+  margin-right: 93px;
 }
 .social-networks-footer {
   display: flex;
@@ -885,6 +912,70 @@ footer {
   fill: var(--background-color);
 }
 
+.form-footer {
+  width: 570px;  
+}
+.mailing-div {
+  display: flex;  
+}
+.mailing {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--background-color);
+}
+
+.email-footer-input {
+  align-items: center;
+  outline: transparent;
+  margin-right: 12px;
+  padding: 15px 16px;
+  box-sizing: border-box;
+
+  width: 358px;
+  height: 50px;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--background-second-color);
+}
+.button-footer { 
+  
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: none;
+  color: var(--background-color);
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.icon-send {
+  position: absolute;
+  margin-left: 10px;  
+  fill: var(--background-color);
+}
 /* ПОРТФОЛІО */
 
 .header.header-line {
@@ -988,7 +1079,7 @@ footer {
   letter-spacing: 0.03em;
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .services {
@@ -1031,7 +1122,7 @@ footer {
 .services-li {
   display: flex;
   margin-right: 30px;
-  margin-bottom: 30px;  
+  margin-bottom: 30px;
 }
 
 .services-li:nth-child(3n) {
