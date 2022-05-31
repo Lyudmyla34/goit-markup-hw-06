@@ -353,9 +353,7 @@ body {
   fill: var(--accent-color);
 }
 
-.contact-modal{
-  position: absolute; 
-  
+.contact-modal{  
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -864,7 +862,7 @@ footer {
   margin-right: 70px;
 }
 .footer-beatween {
-  margin-right: 93px;
+  margin-right: auto;
 }
 .social-networks-footer {
   display: flex;
@@ -950,7 +948,13 @@ footer {
   background-color: var(--background-second-color);
 }
 .button-footer { 
-  
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 28px;
+  display: flex;
+  justify-content: space-between;
+    align-items: center;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -958,8 +962,7 @@ footer {
   line-height: 30px;
   /* identical to box height, or 188% */
 
-  align-items: center;
-  text-align: center;
+ 
   letter-spacing: 0.06em;
   border: none;
   color: var(--background-color);
@@ -972,7 +975,7 @@ footer {
 }
 
 .icon-send {
-  position: absolute;
+  display: flex;
   margin-left: 10px;  
   fill: var(--background-color);
 }
