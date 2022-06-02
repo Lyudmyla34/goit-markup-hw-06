@@ -409,7 +409,7 @@
         <p class="contact-modal">Оставьте свои данные, мы вам перезвоним</p>
         <label class="username-label"> Имя</label>
           <div class="username">
-          <input type="text" name="username" autofocus class="username-input" />
+          <input type="text" name="username" autofocus class="username-input" required />
           <svg class="username-svg" width="18" height="18">
             <use href="./images/symbol-def.svg#icon-person-black-18dp-1"></use>
           </svg>
@@ -430,12 +430,17 @@
         </div>
         <label class="username-label" >
           Коментарий </label>
-          <textarea class="textarea-user" name="feedback" rows="5" placeholder="Введите текст"></textarea>
-        
-        <label>
-          <input type="checkbox" name="conditions" value="Соглашаюсь с рассылкой и принимаю Условия договора"/>
-          Отправить
+          <textarea class="textarea-user" name="feedback" rows="5" placeholder="Введите текст"></textarea>        
+        <label >
+          <input class="checkbox visually-hidden" type="checkbox" name="conditions"/>
+          <span class="custome-checkbox">
+            <svg class="custome-icon" width="16" height="15">
+              <use href="./images/symbol-def.svg#icon-icon-check"></use>
+            </svg>
+          </span>
+          <span>Соглашаюсь с рассылкой и принимаю Условия договора</span>
         </label>
+        <button class="button-modal" type="submit">Отправить</button>
       </form>
     </div>
   </div>
