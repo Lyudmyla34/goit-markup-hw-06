@@ -556,7 +556,9 @@ body {
   fill: var(--background-color);
   background-color: var(--accent-color);
 }
-
+.checkbox:hover + .custome-icon{
+  outline-color: var(--accent-color);
+}
 .checkbox:checked:focus + .custome-icon {
   outline-color: var(--accent-color);
   fill: var(--background-color);
