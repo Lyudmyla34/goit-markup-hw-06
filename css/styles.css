@@ -506,13 +506,7 @@ letter-spacing: 0.06em;
   margin: auto;
   width: 200px;
   height: 50px;
-  border: none;
-   font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 30px;
-/* identical to box height, or 188% */
+  border: none;  
   color: var(--background-color);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -541,24 +535,28 @@ line-height: 30px;
 .custome-icon {
   margin-right: 7px;
   border-radius: 2px;
-  outline: 2px solid var(--primary-text-second-color);  
+  outline: 2px solid var(--primary-text-second-color); 
   transition-property: fill, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.custome-icon:focus{
-  border-color: var(--accent-color);
+.custome-icon:focus{ 
 fill: var(--background-color);
 background-color: var(--accent-color);
 }
+
 .checkbox:focus {
   border-color:var(--accent-color) ;
 }
  
-.checkbox:checked + .custome-icon {  
+.checkbox:checked + .custome-icon { 
+  fill: var(--background-color); 
   background-color: var(--accent-color);
-  border-color: var(--accent-color) ;
+  
 }
+.checkbox:checked  + .custome-icon{
+  border-color: var(--accent-color);} 
+
 .checkbox:checked{
   border: var(--accent-color);
 }
