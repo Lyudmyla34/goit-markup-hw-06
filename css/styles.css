@@ -440,7 +440,7 @@ body {
 .username {
   display: flex;
   position: relative;
-  }
+}
 
 .username-input {
   outline: none;
@@ -459,7 +459,7 @@ body {
   top: 11px;
   left: 12px;
   fill: var(--primary-text-second-color);
-  transition-property: color;
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -551,15 +551,14 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.custome-icon:focus {
-  fill: var(--background-color);
-  background-color: var(--accent-color);
+.checkbox:focus + .custome-icon {
+  outline: 2px solid var(--accent-color);
 }
-.checkbox:hover + .custome-icon{
+.checkbox:hover + .custome-icon {
   outline-color: var(--accent-color);
 }
 .checkbox:checked:focus + .custome-icon {
-  outline-color: var(--accent-color);
+  outline: 2px solid var(--accent-color);
   fill: var(--background-color);
   background-color: var(--accent-color);
   background-size: contain;
@@ -1175,6 +1174,11 @@ footer {
   background-color: var(--background-second-color);
 }
 
+.email-footer-input:hover,
+.email-footer-input:focus {
+  border-color: var(--accent-color);
+}
+
 .button-footer {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1355,6 +1359,7 @@ footer {
 }
 
 .services-a.link {
+  display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1401,6 +1406,7 @@ footer {
 }
 
 .services-type {
+  color: var(--primary-text-color);
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -1436,12 +1442,8 @@ footer {
   transform: translateY(100%);
 }
 
-.services-li:hover .services-overlay {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.services-li:focus .services-overlay {
+.services-a:hover .services-overlay,
+.services-a:focus .services-overlay {
   opacity: 1;
   transform: translateY(0);
 }
